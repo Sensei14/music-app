@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 450px 450px 450px;
   grid-template-rows: 300px 300px 300px;
-  grid-gap: 50px;
+  grid-gap: 20px;
   justify-content: center;
 }
 
@@ -15,4 +15,12 @@
 
 .pagination button {
   margin: 0 1rem;
+}
+
+.result-count {
+  display: grid;
+  grid-gap: 25px;
+  font-weight: bold;
+  justify-content: center;
+  color: #ff628f;
 }

@@ -1,0 +1,18 @@
+.song-list {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-template-rows: 300px 300px 300px;
+  grid-gap: 50px;
+  justify-content: center;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.pagination button {
+  margin: 0 1rem;
+}

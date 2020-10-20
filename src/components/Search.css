@@ -1,0 +1,48 @@
+.search-bar {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  outline: none;
+  height: 30px;
+  width: 300px;
+  background-color: transparent;
+  position: relative;
+  border: none;
+  border-bottom: 2px #972545 solid;
+  margin-right: 1rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: #ff628f;
+}
+
+input:focus {
+  border-color: #ef4e7b;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  color: #fff;
+}
+
+button {
+  font-size: 2rem;
+  height: 48px;
+  width: 140px;
+  border-width: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 22px;
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #ef4e7b;
+  color: #fc4679;
+}
+
+button:hover {
+  background-color: #ef4e7b;
+  color: #fff;
+  border-color: #ff6f98;
+}

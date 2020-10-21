@@ -6,6 +6,7 @@ import LoadingSpinner from "./LoadingSpinner";
 const MusicApp = () => {
   const [term, setTerm] = useState("");
   const [result, setResult] = useState([]);
+  const [resultCount, setResultCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [firstSearch, setFirstSearch] = useState(true);
 
@@ -23,6 +24,7 @@ const MusicApp = () => {
     const responseData = await response.json();
 
     setResult(responseData.results);
+    setResultCount(responseData.resultCount);
     setIsLoading(false);
   };
 
@@ -47,7 +49,7 @@ const MusicApp = () => {
         handleSearch={handleSearch}
       />
       {isLoading && <LoadingSpinner />}
-      {result.length > 0 && <SongList songs={result} />}
+      {result.length > 0 && <SongList songs={result} resultCount={resultCount} />}
     </div>
   );
 };
